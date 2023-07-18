@@ -6,6 +6,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.6;
     font-size: 18px;
+    background-color: #d2e0f7;
 }
 
 * {
@@ -13,8 +14,9 @@ body {
 }
 
 a {
-  color: #d116a9;
+  color: #6969d3;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
