@@ -23,17 +23,17 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Daniel. I'm a web developer, English teacher and translator (English/Portuguese) from Brazil. You can contact me on linkedIn</p>
+        <p>Hello, I'm Daniel. I'm a web developer, English teacher and translator (English/Portuguese) from Brazil. You can contact me on <a href="https://www.linkedin.com/in/daniel-yabu/">linkedIn</a> and on <a href="https://github.com/d4n13ln13ls3n">GitHub</a></p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          (This is a sample website - the first one I've developed using Next.js, by following{' '}
+          <a href="https://nextjs.org/learn">the official Next.js tutorial</a>.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className={`${utilStyles.listItem} ${utilStyles.card}`} key={id}>
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
